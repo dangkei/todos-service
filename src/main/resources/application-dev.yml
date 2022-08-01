@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: todos-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    url: jdbc:mysql://175.178.33.209:3306/todos?serverTimezone=UTC
+    username: todos
+    password: ARZGdKFwNbsDCDiZ
+  thymeleaf:
+    cache: true
+    check-template: true
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    excluded-view-names: ''
+    mode: HTML5
+    prefix:classpath: /templates/
+    suffix: .html
+server:
+  port: 8080
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
